@@ -12,9 +12,11 @@ jobs:
     runs-on: [self-hosted, windows-local]
     steps:
       - name: Run video analysis worker
+        shell: powershell
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           VIDEO_REPO_OWNER: Bliixkii
           VIDEO_REPO_NAME: video-analysis-pipeline
         run: |
-          C:/Users/Bliixkii/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe C:/Users/Bliixkii/AppData/Local/hermes/scripts/process_video_issue.py
+          & 'C:\Users\Bliixkii\AppData\Local\hermes\hermes-agent\venv\Scripts\python.exe' 'C:\Users\Bliixkii\AppData\Local\hermes\scripts\process_video_issue.py'
