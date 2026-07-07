@@ -9,6 +9,11 @@
       "issue": 2,
       "url": "https://github.com/Bliixkii/video-analysis-pipeline/releases/download/test-nt8-clip/nt8_test_clip.mp4",
       "analyzed_at": "2026-07-07T05:22:41.337810+00:00"
+    },
+    {
+      "issue": 3,
+      "url": "https://github.com/Bliixkii/video-analysis-pipeline/releases/download/test-nt8-clip/nt8_test_clip.mp4",
+      "analyzed_at": "2026-07-07T05:30:01.781336+00:00"
     }
   ]
 }
